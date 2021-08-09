@@ -239,10 +239,11 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 581px;
+  height: 590px;
   background-color: var(--white-text-color);
   padding: 15px;
   transition: transform var(--animation) var(--cubic);
+  padding: 40px;
 }
 .modal__button {
   background-color: var(--white-text-color);
@@ -267,17 +268,26 @@ img {
   fill: var(--accent-color);
 }
 .form {
-  padding: 32px;
   width: 100%;
   height: 100%;
+}
+.form__record {
+  margin-bottom: 20px;
 }
 .form__field {
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
 }
+
 .form__lable {
   margin-bottom: 5px;
+}
+.form__lable_textarea {
+  margin-bottom: 5px;
+}
+.form__input_textarea {
+  padding: 10px 20px;
 }
 .form__input {
   padding: 10px 20px;
@@ -287,6 +297,15 @@ img {
 }
 .form__input::placeholder {
   color: #2a2a2a;
+}
+.form__comment {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form__consent {
+  margin-left: 10px;
 }
 
 /* =====Розмітка Features===== */

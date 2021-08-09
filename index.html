@@ -69,6 +69,7 @@
          
          <form class="form">
             <h3 class="form__title">Оставьте свои данные, мы вам перезвоним</h3>
+            <div class="form__record">
             <div class="form__field">
                <label for="name" class="form__lable">Имя</label>
                <input class="form__input" type="text" name="name" id="name">
@@ -88,16 +89,14 @@
                <label for="comment" class="form__lable_textarea">Комментарий</label>
                <textarea class="form__input_textarea" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea> 
             </div>
-
+         </div>
             
+              <div class="form__comment">
+               <input type="checkbox" name="" value="consent" id="consent">
+               <label for="consent" class="form__consent">Соглашаюсь с рассилкой и принимаю условя договора</label> 
+              </div>
+             <button type="submit" class="button__sending">Отправить</button>
             
-
-           <input type="checkbox" name="" value="consent" id="consent">
-           <label for="consent">Соглашаюсь с рассилкой и принимаю условя договора</label>
-
-         
-
-           <button type="submit">Отправить</button>
          </form>
         </div>
    </div>
