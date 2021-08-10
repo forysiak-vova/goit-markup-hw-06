@@ -630,6 +630,7 @@ img {
   border-radius: 4px;
   padding: 15px 15px;
   color: var(--white-text-color);
+  margin-right: 10px;
 }
 
 .footer__button {
@@ -642,6 +643,12 @@ img {
   background-color: #2196f3;
   border-radius: 6px;
   border: none;
+  cursor: pointer;
+  transition: background-color var(--animation) var(--cubic);
+}
+.footer__button:hover,
+.footer__button:focus {
+  background-color: #188ce8;
 }
 .subscription__title {
   font-weight: bold;
