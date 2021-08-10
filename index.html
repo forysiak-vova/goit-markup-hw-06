@@ -72,17 +72,32 @@
             <div class="form__record">
             <div class="form__field">
                <label for="name" class="form__lable">Имя</label>
-               <input class="form__input" type="text" name="name" id="name">
-            </div>
+               <span class="form__span">
+                  <input class="form__input" type="text" name="name" id="name">
+                  <svg class="modal_svg__icon" width="12" height="12">
+                     <use href="./img/symbol-defs.svg#name"></use>
+                  </svg>
+               </span>
+               </div>
           
            <div class="form__field">
-               <label for="tel" class="form__lable">Телефон</label>
-               <input class="form__input" type="tel" name="tel" id="tel">
+            <label for="tel" class="form__lable">Телефон</label>
+               <span class="form__span">
+                  <input class="form__input" type="tel" name="tel" id="tel">
+                  <svg class="modal_svg__icon" width="13" height="13">
+                     <use href="./img/symbol-defs.svg#handset"></use>
+                  </svg>
+               </span>
            </div>
 
             <div class="form__field">
                <label for="mail" class="form__lable">Почта</label>
-               <input class="form__input" type="email" name="mail" id="mail">
+              <span class="form__span">
+                  <input class="form__input" type="email" name="mail" id="mail">
+                  <svg class="modal_svg__icon" width="15" height="12">
+                     <use href="./img/symbol-defs.svg#Modal-letter"></use>
+                  </svg>
+               </span>
             </div>
 
             <div class="form__field">
@@ -483,8 +498,11 @@
 <div class="subscription">
 <h3 class="subscription__title">ПОДПИШИТЕСЬ НА РАССИЛКУ</h3>
 <input type="email" name="mail" id="mail" placeholder="E-mail" class="footer__email">
-<button type="submit" class="footer__button">ПОДПИСАТЬСА</button>
-
+<button type="submit" class="footer__button">ПОДПИСАТЬСА
+   <svg class="plan__icon" width="24" height="24">
+      <use href="./img/symbol-defs.svg#plane"></use>
+   </svg>
+</button>
 </div>
 
 </div>

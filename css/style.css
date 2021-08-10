@@ -274,6 +274,7 @@ img {
 }
 
 .form__field {
+  position: relative;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -292,18 +293,25 @@ img {
   margin-bottom: 4px;
 }
 .form__input_textarea {
+  height: 120px;
   padding: 10px;
   resize: none;
+  outline: none;
+  border-radius: 3px;
+}
+.form__input_textarea:focus {
+  border-color: var(--accent-color);
 }
 .form__input {
-  padding: 10px 20px;
+  height: 40px;
+  width: 100%;
+  padding: 10px 40px;
   margin: 0;
   border: 1px solid #9e8787;
   border-radius: 3px;
+  outline: none;
 }
-.form__input::placeholder {
-  color: #2a2a2a;
-}
+
 .form__comment {
   margin-bottom: 30px;
   display: flex;
@@ -341,6 +349,18 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 10px;
+}
+.modal_svg__icon {
+  position: absolute;
+  top: 48px;
+  left: 13px;
+  transform: translateY(-50%);
+}
+.form__span:focus-within .modal_svg__icon {
+  fill: var(--accent-color);
+}
+.form__span:focus-within .form__input {
+  border-color: var(--accent-color);
 }
 
 /* =====Розмітка Features===== */
@@ -634,6 +654,7 @@ img {
 }
 
 .footer__button {
+  position: relative;
   padding: 10px 62px 10px 29px;
   font-weight: bold;
   font-size: 16px;
@@ -649,6 +670,11 @@ img {
 .footer__button:hover,
 .footer__button:focus {
   background-color: #188ce8;
+}
+.plan__icon {
+  position: absolute;
+  top: 13;
+  right: 28px;
 }
 .subscription__title {
   font-weight: bold;
