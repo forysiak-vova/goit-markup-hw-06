@@ -298,6 +298,7 @@ img {
   resize: none;
   outline: none;
   border-radius: 3px;
+  transition: border-color var(--animation) var(--cubic);
 }
 .form__input_textarea:focus {
   border-color: var(--accent-color);
@@ -310,6 +311,7 @@ img {
   border: 1px solid #9e8787;
   border-radius: 3px;
   outline: none;
+  transition: border-color var(--animation) var(--cubic);
 }
 
 .form__comment {
@@ -355,6 +357,7 @@ img {
   top: 48px;
   left: 13px;
   transform: translateY(-50%);
+  transition: fill var(--animation) var(--cubic);
 }
 .form__span:focus-within .modal_svg__icon {
   fill: var(--accent-color);
@@ -400,6 +403,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.checkbox {
+  appearance: none;
 }
 
 /* =======Робота======= */
