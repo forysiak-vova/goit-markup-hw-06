@@ -107,8 +107,14 @@
          </div>
             
               <div class="form__comment">
-               <input class="checkbox" type="checkbox" name="" value="consent" id="consent">
-               <label for="consent" class="form__consent">Соглашаюсь с рассилкой и принимаю условя договора</label> 
+               <span class="checkbox__span">
+                  <input class="checkbox" type="checkbox" name="" value="consent" id="consent">
+                  <svg class="checkbox__icon" width="16" height="15">
+                     <use href="./img/symbol-defs.svg#icon-check"></use>
+                  </svg>
+               </span>
+               <label for="consent" class="form__consent"> Соглашаюсь с рассилкой и принимаю <a href="checkbox__link">Условя договора</a> </label> 
+               
               </div>
              <button type="submit" class="button__sending">Отправить</button>
             
@@ -497,12 +503,14 @@
 <!-- =======Подписка======= -->
 <div class="subscription">
 <h3 class="subscription__title">ПОДПИШИТЕСЬ НА РАССИЛКУ</h3>
-<input type="email" name="mail" id="mail" placeholder="E-mail" class="footer__email">
-<button type="submit" class="footer__button">ПОДПИСАТЬСА
+<form class="subscription__form">
+   <input type="email" name="mail" id="mail" placeholder="E-mail" class="footer__email">
+<button type="submit" class="footer__button">Подписатса
    <svg class="plan__icon" width="24" height="24">
       <use href="./img/symbol-defs.svg#plane"></use>
    </svg>
 </button>
+</form>
 </div>
 
 </div>
