@@ -320,9 +320,7 @@ img {
   align-items: center;
   justify-content: center;
 }
-.form__consent {
-  margin-left: 10px;
-}
+
 .button__sending {
   display: block;
   margin: 0 auto;
@@ -365,18 +363,22 @@ img {
 .form__span:focus-within .form__input {
   border-color: var(--accent-color);
 }
-.checkbox {
+.checkbox__input {
   appearance: none;
 }
-.checkbox__input {
-  border: 1px solid #2a2a2a;
+.checkbox__icon {
+  border: 1px solid #000000;
   border-radius: 4px;
-  background-origin: content-box;
+  fill: var(--white-text-color);
+  margin-right: 10px;
+  width: 16px;
+  height: 15px;
+}
+.checkbox__input:checked .checkbox__icon {
   background-color: var(--accent-color);
-  fill: #ffffff;
 }
 
-.checkbox__span {
+.form__consent {
   display: flex;
   align-items: center;
 }
