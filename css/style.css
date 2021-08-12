@@ -376,6 +376,7 @@ img {
 }
 .checkbox__input:checked + .checkbox__icon {
   background-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .form__consent {
