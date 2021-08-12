@@ -374,7 +374,7 @@ img {
   width: 16px;
   height: 15px;
 }
-.checkbox__input:checked .checkbox__icon {
+.checkbox__input:checked + .checkbox__icon {
   background-color: var(--accent-color);
 }
 
