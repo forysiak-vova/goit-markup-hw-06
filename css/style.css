@@ -286,9 +286,6 @@ img {
   margin-bottom: 20px;
 }
 
-.form__lable {
-  margin-bottom: 4px;
-}
 .form__lable_textarea {
   margin-bottom: 4px;
 }
@@ -386,6 +383,7 @@ img {
 .checkbox__link {
   text-decoration: underline;
   color: var(--accent-color);
+  margin-left: 5px;
 }
 
 /* =====Розмітка Features===== */
