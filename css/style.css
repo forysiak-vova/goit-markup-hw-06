@@ -390,6 +390,8 @@ img {
   background-image: url(../img/icon.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  border: none;
+  border-color: var(--accent-color);
 } */
 
 .form__consent {
