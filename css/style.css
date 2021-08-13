@@ -367,18 +367,30 @@ img {
 .checkbox__input {
   appearance: none;
 }
-.checkbox__icon {
-  border: 1px solid #000000;
+.checkbox__span {
+  border: 2px solid #000;
   border-radius: 4px;
-  fill: var(--white-text-color);
-  margin-right: 10px;
   width: 16px;
   height: 15px;
+  margin-right: 10px;
 }
-.checkbox__input:checked + .checkbox__icon {
-  background-color: var(--accent-color);
+
+.checkbox__input:checked + .checkbox__span {
+  background-image: url(../img/icon.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+}
+
+.checkbox__input:focus + .checkbox__span {
   border-color: var(--accent-color);
 }
+
+/* .checkbox__input:checked:focus + .checkbox__span {
+  background-image: url(../img/icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 
 .form__consent {
   display: flex;
