@@ -265,8 +265,8 @@ img {
   fill: #000000;
   transition: fill var(--animation) var(--cubic);
 }
-.modal__icon:hover,
-.modal__icon:focus {
+.modal__button:hover .modal__icon,
+.modal__button:focus .modal__icon {
   fill: var(--accent-color);
 }
 .form {
